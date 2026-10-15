@@ -89,25 +89,35 @@ The CNN v2 classification report shows a weighted F1-score of approximately 99.0
 ## Project Structure
 
 ```text
-AgenticX_Handwritten_Character_Recognition/
-├── data/
-│   ├── mnist_dataset.npz
-│   └── mnist_preprocessed.npz
+
+AgenticX-Handwritten-Character-Recognition/
+├── 01_AgenticX_Handwritten_Character_Recognition.ipynb
+├── 02_AgenticX_Hand_Written_Project.ipynb
+├── README.md
+├── requirements.txt
 ├── models/
 │   ├── logistic_regression_baseline.joblib
 │   ├── cnn_v1.keras
 │   └── cnn_v2.keras
-├── checkpoints/
-├── results/
-│   ├── baseline_metrics.npz
-│   ├── cnn_v1_test_metrics.npz
-│   ├── cnn_v2_test_metrics.npz
-│   ├── cnn_v2_classification_report.txt
-│   └── final_model_comparison.csv
 ├── plots/
-├── predictions/
-├── requirements.txt
-└── README.md
+│   ├── cnn_v1_confusion_matrix.png
+│   ├── cnn_v1_training_curves.png
+│   ├── cnn_v1_worst_20_predictions.png
+│   ├── cnn_v2_confusion_matrix.png
+│   ├── cnn_v2_training_curves.png
+│   ├── cnn_v2_worst_20_predictions.png
+│   └── logistic_regression_confusion_matrix.png
+└── results/
+    ├── baseline_metrics.npz
+    ├── cnn_v1_history.npz
+    ├── cnn_v1_test_metrics.npz
+    ├── cnn_v1_worst_20_errors.csv
+    ├── cnn_v2_classification_report.txt
+    ├── cnn_v2_history.npz
+    ├── cnn_v2_test_metrics.npz
+    ├── cnn_v2_worst_20_errors.csv
+    ├── final_model_comparison.csv
+    └── model_comparison.csv
 ```
 
 Generated datasets, model files, checkpoints, and prediction arrays are stored locally or in Google Drive and do not all need to be committed to GitHub.
